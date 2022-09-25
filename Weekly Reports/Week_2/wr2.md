@@ -27,3 +27,9 @@ Oftentimes these two catagories are separated to the simplified terms of Type 1 
 
 
 # Installing Ubuntu in Virtualbox
+![Storage_Management_Ubuntu](Storage_Control_Ubuntu.png)
+![Geolocation_Ubuntu](Where_Are_You_Ubuntu.png)
+![Install_vs_Try-Ubuntu](Install-vs-Try_Ubuntu.png)
+![How_to_Install_Update-Ubuntu](Install_Update_Ubuntu.png)
+![Ubuntu_Live_Server-Explanation](Live_Server_Explanation.png)
+
