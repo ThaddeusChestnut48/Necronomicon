@@ -11,7 +11,7 @@ Class: CIS106-fall
 
 ## Question 3
 
-![ubuntu_before_restart](Ubuntu%20before%20restart.png)
+![ubuntu_before_restart](Log-in.png)
 
 ## Question 4
 
