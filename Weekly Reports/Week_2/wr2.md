@@ -33,3 +33,4 @@ Oftentimes these two catagories are separated to the simplified terms of Type 1 
 ![How_to_Install_Update-Ubuntu](Install_Update_Ubuntu.png)
 ![Ubuntu_Live_Server-Explanation](Live_Server_Explanation.png)
 
+
