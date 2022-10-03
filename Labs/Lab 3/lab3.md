@@ -6,8 +6,10 @@ Semester: Fall 22
 # Lab 3 Submission 
 
 ## Question 1
-Has no submission 
+
 ![date](Date_Command.png)
+
+Has No Submission
 
 ## Question 2
 ![q2](q2.png)
