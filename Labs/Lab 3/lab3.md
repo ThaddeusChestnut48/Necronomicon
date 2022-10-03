@@ -10,7 +10,9 @@ Has no submission
 ![date](Date_Command.png)
 
 ## Question 2
+![q2](q2.png)
 
+## Question 3
 | Program Purpose    | Package Name | Version |
 |------------------- | ------------ | ------- |
 | Play A Tetris Game |blockattack           | 2.7.0-1 amd64
@@ -25,6 +27,8 @@ apt list --installed
 apt list --remove
 3. Which command will you use to install and remove?
 sudo apt install package+ package-
+
+## Question 4
 
 | command | what it does |
 |---------|------|
