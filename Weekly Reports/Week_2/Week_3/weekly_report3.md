@@ -62,7 +62,11 @@ Class: CIS 106 Linux Fundamentals
       * reusable code that can be used by more than one function or program. 
     * Repository 
       * a large collection of software available for download 
+
   * Include the screenshot of how to update ubuntu with its explanation (page 6)
-    * ![Command-Example](../../../Labs/Lab%203/How_To_Use_A_Command.png)
-1. In your repository create a folder for cheat sheets and place here the installing software cheat sheet, and markdown chear sheet.
-   *![Cheatsheet_Conformation](../../../Labs/Lab%203/Cheat_Sheet_Conformation.png)
+  
+  ![Command-Example](../../../Labs/Lab%203/How_To_Use_A_Command.png)
+
+5. In your repository create a folder for cheat sheets and place here the installing software cheat sheet, and markdown chear sheet.
+
+![Cheatsheet_Conformation](../../../Labs/Lab%203/Cheat_Sheet_Conformation.png)
