@@ -7,7 +7,7 @@ Class: CIS 106 Linux Fundamentals
 # Weekly Report 3
 
 4. Summary of Presentations 
-  * Exploring Desktop Envronments
+  * Exploring Desktop Environments
     * a bulleted list of different desktop environments
       * GNOME 
       * KDE
@@ -16,8 +16,8 @@ Class: CIS 106 Linux Fundamentals
       * Pantheon
     * Definitions for the following terms: GUI, DE
       * GUI - Graphical User Interfaces. Often is a graphic system designed to make the user's experience less technically intimating.
-      * DE - an implementation of the destop metaphor made of a bundle of programs running on top of a computer operating syste, which shares a common GUI, sometimes desecribed as a graphical shell.
-    * Bulleted list of the common elements of a destop environment
+      * DE - an implementation of the desktop metaphor made of a bundle of programs running on top of a computer operating system, which shares a common GUI, sometimes described as a graphical shell.
+    * Bulleted list of the common elements of a desktop environment
       * Desktop Settings 
       * File Manager
       * Display Manager
@@ -25,7 +25,7 @@ Class: CIS 106 Linux Fundamentals
       * Favorites Bar
 * The Bash Shell
   * What is a shell 
-    * A shell is a program that provides interactive accesss to the Linux system.
+    * A shell is a program that provides interactive access to the Linux system.
   * List different shells
     * Tcsh Shell
     * Csh Shell
@@ -38,7 +38,7 @@ Class: CIS 106 Linux Fundamentals
     * Ctrl + K - delete from cursor to the end of the command line 
     * Ctrl + U - delete from cursor to the the start of the command line
     * Ctrl + W - delete from cursor to start of word (i.e. delete backwards one word)
-    * Ctrl + Y - paste word or text that was cut usjing one of the deletion shortcuts (such as the one above) after to cursor
+    * Ctrl + Y - paste word or text that was cut using one of the deletion shortcuts (such as the one above) after to cursor
   * List basic commands and their usage
     * date 0 displays the current time and date
     * cal - displays a claendar of the current month 
