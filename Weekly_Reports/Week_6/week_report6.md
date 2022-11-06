@@ -20,7 +20,7 @@ Examples:
 ![practice5](practice5_*.png)
 
 ### Practice 6
-![practice6](practice6_?.png)
+![practice6](practice6.png)
 
-### Practice 
+### Practice 7  
 ![practice7](practice7_[].png)
