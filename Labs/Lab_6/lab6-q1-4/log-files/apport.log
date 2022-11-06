@@ -1,0 +1,11 @@
+ERROR: apport (pid 5772) Wed Nov  2 16:05:52 2022: host pid 5671 crashed in a separate mount namespace, ignoring
+ERROR: apport (pid 5870) Wed Nov  2 16:05:53 2022: host pid 5808 crashed in a separate mount namespace, ignoring
+ERROR: apport (pid 5930) Wed Nov  2 16:05:53 2022: host pid 5871 crashed in a separate mount namespace, ignoring
+ERROR: apport (pid 6030) Wed Nov  2 16:05:54 2022: host pid 5939 crashed in a separate mount namespace, ignoring
+ERROR: apport (pid 6376) Wed Nov  2 16:05:56 2022: host pid 6079 crashed in a separate mount namespace, ignoring
+ERROR: apport (pid 1843) Wed Nov  2 16:10:59 2022: host pid 1750 crashed in a separate mount namespace, ignoring
+ERROR: apport (pid 1937) Wed Nov  2 16:11:00 2022: host pid 1874 crashed in a separate mount namespace, ignoring
+ERROR: apport (pid 2000) Wed Nov  2 16:11:01 2022: host pid 1938 crashed in a separate mount namespace, ignoring
+ERROR: apport (pid 2110) Wed Nov  2 16:11:01 2022: host pid 2019 crashed in a separate mount namespace, ignoring
+ERROR: apport (pid 2398) Wed Nov  2 16:11:03 2022: host pid 2192 crashed in a separate mount namespace, ignoring
+ERROR: apport (pid 2561) Wed Nov  2 16:11:04 2022: host pid 2473 crashed in a separate mount namespace, ignoring

@@ -1,0 +1,289 @@
+Nov  2 15:48:45 cis106vm systemd-logind[658]: New seat seat0.
+Nov  2 15:48:45 cis106vm systemd-logind[658]: Watching system buttons on /dev/input/event0 (Power Button)
+Nov  2 15:48:45 cis106vm systemd-logind[658]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Nov  2 15:48:45 cis106vm systemd-logind[658]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Nov  2 15:48:46 cis106vm gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=127) by (uid=0)
+Nov  2 15:48:46 cis106vm systemd-logind[658]: New session c1 of user gdm.
+Nov  2 15:48:46 cis106vm systemd: pam_unix(systemd-user:session): session opened for user gdm(uid=127) by (uid=0)
+Nov  2 15:48:48 cis106vm polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.38 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  2 15:48:53 cis106vm gdm-password]: gkr-pam: unable to locate daemon control file
+Nov  2 15:48:53 cis106vm gdm-password]: gkr-pam: stashed password to try later in open session
+Nov  2 15:48:53 cis106vm gdm-password]: pam_unix(gdm-password:session): session opened for user tchestnut44967(uid=1000) by (uid=0)
+Nov  2 15:48:53 cis106vm systemd-logind[658]: New session 2 of user tchestnut44967.
+Nov  2 15:48:53 cis106vm systemd: pam_unix(systemd-user:session): session opened for user tchestnut44967(uid=1000) by (uid=0)
+Nov  2 15:48:53 cis106vm gdm-password]: gkr-pam: gnome-keyring-daemon started properly and unlocked keyring
+Nov  2 15:48:54 cis106vm gnome-keyring-daemon[1265]: The PKCS#11 component was already initialized
+Nov  2 15:48:54 cis106vm gnome-keyring-daemon[1265]: The Secret Service was already initialized
+Nov  2 15:48:54 cis106vm gnome-keyring-daemon[1265]: The SSH agent was already initialized
+Nov  2 15:48:55 cis106vm polkitd(authority=local): Registered Authentication Agent for unix-session:2 (system bus name :1.80 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  2 15:48:58 cis106vm gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+Nov  2 15:48:58 cis106vm systemd-logind[658]: Session c1 logged out. Waiting for processes to exit.
+Nov  2 15:48:59 cis106vm systemd-logind[658]: Removed session c1.
+Nov  2 15:48:59 cis106vm polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.38, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Nov  2 15:49:12 cis106vm dbus-daemon[611]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+Nov  2 15:50:02 cis106vm pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by (uid=1000)
+Nov  2 15:50:02 cis106vm pkexec[2441]: tchestnut44967: Executing command [USER=root] [TTY=unknown] [CWD=/home/tchestnut44967] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Nov  2 15:51:43 cis106vm PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  2 15:51:43 cis106vm PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  2 15:51:44 cis106vm PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  2 15:51:44 cis106vm PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  2 15:51:47 cis106vm PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  2 15:51:47 cis106vm PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  2 15:51:56 cis106vm polkitd(authority=local): Operator of unix-session:2 successfully authenticated as unix-user:tchestnut44967 to gain TEMPORARY authorization for action io.snapcraft.snapd.manage for unix-process:2690:18117 [/snap/snap-store/582/usr/bin/snap-store snap://code] (owned by unix-user:tchestnut44967)
+Nov  2 15:52:53 cis106vm PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.package-install auth (only_trusted:1)
+Nov  2 15:52:56 cis106vm polkitd(authority=local): Operator of unix-session:2 successfully authenticated as unix-user:tchestnut44967 to gain TEMPORARY authorization for action org.freedesktop.packagekit.package-install for system-bus-name::1.120 [/snap/snap-store/582/usr/bin/snap-store snap://code] (owned by unix-user:tchestnut44967)
+Nov  2 15:52:56 cis106vm PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.package-install
+Nov  2 15:54:37 cis106vm groupadd[19783]: group added to /etc/group: name=fwupd-refresh, GID=136
+Nov  2 15:54:37 cis106vm groupadd[19783]: group added to /etc/gshadow: name=fwupd-refresh
+Nov  2 15:54:37 cis106vm groupadd[19783]: new group: name=fwupd-refresh, GID=136
+Nov  2 15:54:37 cis106vm useradd[19789]: new user: name=fwupd-refresh, UID=128, GID=136, home=/run/systemd, shell=/usr/sbin/nologin, from=/dev/pts/2
+Nov  2 15:54:37 cis106vm usermod[19796]: change user 'fwupd-refresh' password
+Nov  2 15:54:37 cis106vm chage[19803]: changed password expiry for fwupd-refresh
+Nov  2 15:54:37 cis106vm chfn[19807]: changed user 'fwupd-refresh' information
+Nov  2 15:55:36 cis106vm systemd-logind[658]: System is rebooting.
+Nov  2 15:55:49 cis106vm systemd-logind[655]: New seat seat0.
+Nov  2 15:55:49 cis106vm systemd-logind[655]: Watching system buttons on /dev/input/event0 (Power Button)
+Nov  2 15:55:49 cis106vm systemd-logind[655]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Nov  2 15:55:49 cis106vm systemd-logind[655]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Nov  2 15:55:49 cis106vm gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=127) by (uid=0)
+Nov  2 15:55:49 cis106vm systemd-logind[655]: New session c1 of user gdm.
+Nov  2 15:55:49 cis106vm systemd: pam_unix(systemd-user:session): session opened for user gdm(uid=127) by (uid=0)
+Nov  2 15:55:52 cis106vm polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.41 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  2 15:56:15 cis106vm dbus-daemon[625]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+Nov  2 15:56:34 cis106vm gdm-password]: gkr-pam: unable to locate daemon control file
+Nov  2 15:56:34 cis106vm gdm-password]: gkr-pam: stashed password to try later in open session
+Nov  2 15:56:34 cis106vm gdm-password]: pam_unix(gdm-password:session): session opened for user tchestnut44967(uid=1000) by (uid=0)
+Nov  2 15:56:34 cis106vm systemd-logind[655]: New session 2 of user tchestnut44967.
+Nov  2 15:56:34 cis106vm systemd: pam_unix(systemd-user:session): session opened for user tchestnut44967(uid=1000) by (uid=0)
+Nov  2 15:56:34 cis106vm gdm-password]: gkr-pam: gnome-keyring-daemon started properly and unlocked keyring
+Nov  2 15:56:35 cis106vm gnome-keyring-daemon[1364]: The Secret Service was already initialized
+Nov  2 15:56:35 cis106vm gnome-keyring-daemon[1364]: The PKCS#11 component was already initialized
+Nov  2 15:56:35 cis106vm gnome-keyring-daemon[1364]: The SSH agent was already initialized
+Nov  2 15:56:36 cis106vm polkitd(authority=local): Registered Authentication Agent for unix-session:2 (system bus name :1.83 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  2 15:56:41 cis106vm gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+Nov  2 15:56:41 cis106vm systemd-logind[655]: Session c1 logged out. Waiting for processes to exit.
+Nov  2 15:56:41 cis106vm systemd-logind[655]: Removed session c1.
+Nov  2 15:56:41 cis106vm polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.41, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Nov  2 15:56:45 cis106vm PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  2 15:56:45 cis106vm PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  2 15:57:00 cis106vm dbus-daemon[625]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+Nov  2 15:57:31 cis106vm sudo: tchestnut44967 : TTY=pts/0 ; PWD=/home/tchestnut44967 ; USER=root ; COMMAND=/usr/bin/apt update
+Nov  2 15:57:31 cis106vm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  2 15:57:33 cis106vm sudo: pam_unix(sudo:session): session closed for user root
+Nov  2 15:57:37 cis106vm sudo: tchestnut44967 : TTY=pts/0 ; PWD=/home/tchestnut44967 ; USER=root ; COMMAND=/usr/bin/apt install
+Nov  2 15:57:37 cis106vm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  2 15:57:38 cis106vm sudo: pam_unix(sudo:session): session closed for user root
+Nov  2 15:59:34 cis106vm sudo: tchestnut44967 : TTY=pts/0 ; PWD=/home/tchestnut44967 ; USER=root ; COMMAND=/usr/bin/apt install curl https://cis106.com/assets/installexa/sh
+Nov  2 15:59:34 cis106vm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  2 15:59:34 cis106vm sudo: pam_unix(sudo:session): session closed for user root
+Nov  2 16:03:07 cis106vm sudo: tchestnut44967 : TTY=pts/0 ; PWD=/home/tchestnut44967 ; USER=root ; COMMAND=/usr/bin/apt install tree
+Nov  2 16:03:07 cis106vm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  2 16:03:12 cis106vm sudo: pam_unix(sudo:session): session closed for user root
+Nov  2 16:03:16 cis106vm sudo: tchestnut44967 : TTY=pts/0 ; PWD=/home/tchestnut44967 ; USER=root ; COMMAND=/usr/bin/apt install exa
+Nov  2 16:03:16 cis106vm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  2 16:03:19 cis106vm sudo: pam_unix(sudo:session): session closed for user root
+Nov  2 16:05:24 cis106vm polkitd(authority=local): Operator of unix-session:2 successfully authenticated as unix-user:tchestnut44967 to gain TEMPORARY authorization for action com.ubuntu.softwareproperties.applychanges for system-bus-name::1.132 [/usr/bin/python3 /usr/bin/software-properties-gtk] (owned by unix-user:tchestnut44967)
+Nov  2 16:05:39 cis106vm polkitd(authority=local): Unregistered Authentication Agent for unix-session:2 (system bus name :1.83, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Nov  2 16:05:39 cis106vm gdm-password]: pam_unix(gdm-password:session): session closed for user tchestnut44967
+Nov  2 16:05:39 cis106vm systemd-logind[655]: Session 2 logged out. Waiting for processes to exit.
+Nov  2 16:05:39 cis106vm systemd-logind[655]: Removed session 2.
+Nov  2 16:05:39 cis106vm gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=127) by (uid=0)
+Nov  2 16:05:40 cis106vm systemd-logind[655]: New session c2 of user gdm.
+Nov  2 16:05:40 cis106vm systemd: pam_unix(systemd-user:session): session opened for user gdm(uid=127) by (uid=0)
+Nov  2 16:05:41 cis106vm polkitd(authority=local): Registered Authentication Agent for unix-session:c2 (system bus name :1.148 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  2 16:05:49 cis106vm gdm-password]: gkr-pam: unable to locate daemon control file
+Nov  2 16:05:49 cis106vm gdm-password]: gkr-pam: stashed password to try later in open session
+Nov  2 16:05:50 cis106vm gdm-password]: pam_unix(gdm-password:session): session opened for user tchestnut44967(uid=1000) by (uid=0)
+Nov  2 16:05:50 cis106vm systemd-logind[655]: New session 5 of user tchestnut44967.
+Nov  2 16:05:50 cis106vm systemd: pam_unix(systemd-user:session): session opened for user tchestnut44967(uid=1000) by (uid=0)
+Nov  2 16:05:50 cis106vm gdm-password]: gkr-pam: gnome-keyring-daemon started properly and unlocked keyring
+Nov  2 16:05:52 cis106vm gnome-keyring-daemon[5334]: The Secret Service was already initialized
+Nov  2 16:05:52 cis106vm gnome-keyring-daemon[5334]: The PKCS#11 component was already initialized
+Nov  2 16:05:52 cis106vm gnome-keyring-daemon[5334]: The Secret Service was already initialized
+Nov  2 16:05:52 cis106vm gnome-keyring-daemon[5334]: The SSH agent was already initialized
+Nov  2 16:05:54 cis106vm polkitd(authority=local): Registered Authentication Agent for unix-session:5 (system bus name :1.188 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  2 16:05:59 cis106vm gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+Nov  2 16:05:59 cis106vm systemd-logind[655]: Session c2 logged out. Waiting for processes to exit.
+Nov  2 16:05:59 cis106vm systemd-logind[655]: Removed session c2.
+Nov  2 16:05:59 cis106vm polkitd(authority=local): Unregistered Authentication Agent for unix-session:c2 (system bus name :1.148, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Nov  2 16:05:59 cis106vm PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  2 16:05:59 cis106vm PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  2 16:06:05 cis106vm dbus-daemon[625]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+Nov  2 16:07:58 cis106vm sudo: tchestnut44967 : TTY=pts/0 ; PWD=/home/tchestnut44967 ; USER=root ; COMMAND=/usr/bin/apt install build-essential linux-headers- -y
+Nov  2 16:07:58 cis106vm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  2 16:08:24 cis106vm sudo: pam_unix(sudo:session): session closed for user root
+Nov  2 16:08:51 cis106vm sudo: tchestnut44967 : TTY=pts/0 ; PWD=/home/tchestnut44967 ; USER=root ; COMMAND=/usr/bin/apt install virtualbox-guest-additions-iso virtualbox-guest-x11 -y
+Nov  2 16:08:51 cis106vm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  2 16:09:23 cis106vm groupadd[7911]: group added to /etc/group: name=vboxsf, GID=137
+Nov  2 16:09:23 cis106vm groupadd[7911]: group added to /etc/gshadow: name=vboxsf
+Nov  2 16:09:23 cis106vm groupadd[7911]: new group: name=vboxsf, GID=137
+Nov  2 16:09:54 cis106vm groupadd[11047]: group added to /etc/group: name=vboxusers, GID=138
+Nov  2 16:09:54 cis106vm groupadd[11047]: group added to /etc/gshadow: name=vboxusers
+Nov  2 16:09:54 cis106vm groupadd[11047]: new group: name=vboxusers, GID=138
+Nov  2 16:09:59 cis106vm sudo: pam_unix(sudo:session): session closed for user root
+Nov  2 16:10:36 cis106vm systemd-logind[655]: System is rebooting.
+Nov  2 16:10:46 cis106vm systemd-logind[753]: New seat seat0.
+Nov  2 16:10:46 cis106vm systemd-logind[753]: Watching system buttons on /dev/input/event0 (Power Button)
+Nov  2 16:10:46 cis106vm systemd-logind[753]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Nov  2 16:10:46 cis106vm systemd-logind[753]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Nov  2 16:10:46 cis106vm gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=127) by (uid=0)
+Nov  2 16:10:46 cis106vm systemd-logind[753]: New session c1 of user gdm.
+Nov  2 16:10:46 cis106vm systemd: pam_unix(systemd-user:session): session opened for user gdm(uid=127) by (uid=0)
+Nov  2 16:10:48 cis106vm polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.42 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  2 16:10:56 cis106vm gdm-password]: gkr-pam: unable to locate daemon control file
+Nov  2 16:10:56 cis106vm gdm-password]: gkr-pam: stashed password to try later in open session
+Nov  2 16:10:56 cis106vm gdm-password]: pam_unix(gdm-password:session): session opened for user tchestnut44967(uid=1000) by (uid=0)
+Nov  2 16:10:56 cis106vm systemd-logind[753]: New session 2 of user tchestnut44967.
+Nov  2 16:10:56 cis106vm systemd: pam_unix(systemd-user:session): session opened for user tchestnut44967(uid=1000) by (uid=0)
+Nov  2 16:10:57 cis106vm gdm-password]: gkr-pam: gnome-keyring-daemon started properly and unlocked keyring
+Nov  2 16:10:59 cis106vm gnome-keyring-daemon[1479]: The Secret Service was already initialized
+Nov  2 16:10:59 cis106vm gnome-keyring-daemon[1479]: The Secret Service was already initialized
+Nov  2 16:10:59 cis106vm gnome-keyring-daemon[1479]: The PKCS#11 component was already initialized
+Nov  2 16:10:59 cis106vm gnome-keyring-daemon[1479]: The SSH agent was already initialized
+Nov  2 16:11:01 cis106vm polkitd(authority=local): Registered Authentication Agent for unix-session:2 (system bus name :1.86 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  2 16:11:06 cis106vm gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+Nov  2 16:11:06 cis106vm systemd-logind[753]: Session c1 logged out. Waiting for processes to exit.
+Nov  2 16:11:06 cis106vm systemd-logind[753]: Removed session c1.
+Nov  2 16:11:06 cis106vm polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.42, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Nov  2 16:11:09 cis106vm PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  2 16:11:09 cis106vm PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  2 16:11:11 cis106vm dbus-daemon[716]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+Nov  2 16:11:17 cis106vm systemd: pam_unix(systemd-user:session): session closed for user gdm
+Nov  2 16:14:03 cis106vm dbus-daemon[716]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+Nov  2 16:16:29 cis106vm sudo: tchestnut44967 : TTY=pts/0 ; PWD=/home/tchestnut44967 ; USER=root ; COMMAND=/usr/bin/apt purge apport aisleriot gnome-mahjongg gnome-sudoku gnome-mines -y
+Nov  2 16:16:29 cis106vm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  2 16:16:37 cis106vm sudo: pam_unix(sudo:session): session closed for user root
+Nov  2 16:16:59 cis106vm sudo: tchestnut44967 : TTY=pts/0 ; PWD=/home/tchestnut44967 ; USER=root ; COMMAND=/usr/bin/apt install vlc deluge geany tilix
+Nov  2 16:16:59 cis106vm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  2 16:17:02 cis106vm CRON[5357]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  2 16:17:02 cis106vm CRON[5357]: pam_unix(cron:session): session closed for user root
+Nov  2 16:17:49 cis106vm sudo: pam_unix(sudo:session): session closed for user root
+Nov  2 16:18:14 cis106vm sudo: tchestnut44967 : TTY=pts/0 ; PWD=/home/tchestnut44967 ; USER=root ; COMMAND=/usr/bin/apt install gcc make perl nemo git python3-pip -y
+Nov  2 16:18:14 cis106vm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  2 16:19:15 cis106vm sudo: pam_unix(sudo:session): session closed for user root
+Nov  2 16:19:39 cis106vm sudo: tchestnut44967 : TTY=pts/0 ; PWD=/home/tchestnut44967 ; USER=root ; COMMAND=/usr/bin/apt install curl wget tree htop net-tools vim -y
+Nov  2 16:19:39 cis106vm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  2 16:19:50 cis106vm sudo: pam_unix(sudo:session): session closed for user root
+Nov  2 16:20:06 cis106vm sudo: tchestnut44967 : TTY=pts/0 ; PWD=/home/tchestnut44967 ; USER=root ; COMMAND=/usr/bin/apt install neofetch caffeine samba smbclient -y
+Nov  2 16:20:06 cis106vm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  2 16:20:25 cis106vm groupadd[9208]: group added to /etc/group: name=rdma, GID=139
+Nov  2 16:20:25 cis106vm groupadd[9208]: group added to /etc/gshadow: name=rdma
+Nov  2 16:20:25 cis106vm groupadd[9208]: new group: name=rdma, GID=139
+Nov  2 16:20:34 cis106vm sudo: pam_unix(sudo:session): session closed for user root
+Nov  2 16:21:29 cis106vm sudo: tchestnut44967 : TTY=pts/0 ; PWD=/home/tchestnut44967 ; USER=root ; COMMAND=/usr/bin/apt install gnome-tweaks ununtu-restricted-extras ubuntu-restricted-addons -y
+Nov  2 16:21:29 cis106vm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  2 16:21:30 cis106vm sudo: pam_unix(sudo:session): session closed for user root
+Nov  2 16:21:49 cis106vm sudo: tchestnut44967 : TTY=pts/0 ; PWD=/home/tchestnut44967 ; USER=root ; COMMAND=/usr/bin/apt install gnome-tweaks ubnuntu-restricted-extras ubuntu-restricted-addons -y
+Nov  2 16:21:49 cis106vm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  2 16:21:50 cis106vm sudo: pam_unix(sudo:session): session closed for user root
+Nov  2 16:22:08 cis106vm sudo: tchestnut44967 : TTY=pts/0 ; PWD=/home/tchestnut44967 ; USER=root ; COMMAND=/usr/bin/apt install gnome-tweaks ubuntu-restricted-extras ubuntu-restricted-addons -y
+Nov  2 16:22:08 cis106vm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  2 16:24:53 cis106vm sudo: pam_unix(sudo:session): session closed for user root
+Nov  2 16:25:37 cis106vm sudo: tchestnut44967 : TTY=pts/0 ; PWD=/home/tchestnut44967 ; USER=root ; COMMAND=/usr/bin/apt install snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap -y
+Nov  2 16:25:37 cis106vm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  2 16:25:44 cis106vm groupadd[10837]: group added to /etc/group: name=_flatpak, GID=140
+Nov  2 16:25:44 cis106vm groupadd[10837]: group added to /etc/gshadow: name=_flatpak
+Nov  2 16:25:44 cis106vm groupadd[10837]: new group: name=_flatpak, GID=140
+Nov  2 16:25:44 cis106vm useradd[10846]: new user: name=_flatpak, UID=129, GID=140, home=/nonexistent, shell=/usr/sbin/nologin, from=/dev/pts/2
+Nov  2 16:25:44 cis106vm usermod[10856]: change user '_flatpak' password
+Nov  2 16:25:44 cis106vm chage[10863]: changed password expiry for _flatpak
+Nov  2 16:25:44 cis106vm chfn[10867]: changed user '_flatpak' information
+Nov  2 16:25:44 cis106vm polkitd(authority=local): Registered Authentication Agent for unix-process:10873:90171 (system bus name :1.149 [flatpak remote-list --system], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  2 16:25:44 cis106vm polkitd(authority=local): Unregistered Authentication Agent for unix-process:10873:90171 (system bus name :1.149, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  2 16:25:46 cis106vm sudo: pam_unix(sudo:session): session closed for user root
+Nov  2 16:30:01 cis106vm CRON[11238]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  2 16:30:01 cis106vm CRON[11238]: pam_unix(cron:session): session closed for user root
+Nov  2 16:45:13 cis106vm sudo: tchestnut44967 : TTY=pts/0 ; PWD=/home/tchestnut44967 ; USER=root ; COMMAND=/usr/bin/apt-get install git
+Nov  2 16:45:13 cis106vm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  2 16:45:14 cis106vm sudo: pam_unix(sudo:session): session closed for user root
+Nov  2 16:46:16 cis106vm dbus-daemon[716]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+Nov  2 17:06:30 cis106vm gnome-keyring-daemon[1479]: asked to register item /org/freedesktop/secrets/collection/login/1, but it's already registered
+Nov  2 17:06:34 cis106vm sudo: tchestnut44967 : TTY=pts/0 ; PWD=/home/tchestnut44967 ; USER=root ; COMMAND=/usr/bin/apt update
+Nov  2 17:06:34 cis106vm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  2 17:06:42 cis106vm sudo: pam_unix(sudo:session): session closed for user root
+Nov  2 17:06:42 cis106vm sudo: tchestnut44967 : TTY=pts/0 ; PWD=/home/tchestnut44967 ; USER=root ; COMMAND=/usr/bin/apt install gnome-session-flashback -y
+Nov  2 17:06:42 cis106vm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  2 17:07:04 cis106vm sudo: pam_unix(sudo:session): session closed for user root
+Nov  2 17:07:34 cis106vm polkitd(authority=local): Unregistered Authentication Agent for unix-session:2 (system bus name :1.86, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Nov  2 17:07:35 cis106vm gdm-password]: pam_unix(gdm-password:session): session closed for user tchestnut44967
+Nov  2 17:07:35 cis106vm systemd-logind[753]: Session 2 logged out. Waiting for processes to exit.
+Nov  2 17:07:35 cis106vm systemd-logind[753]: Removed session 2.
+Nov  2 17:07:35 cis106vm gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=127) by (uid=0)
+Nov  2 17:07:35 cis106vm systemd-logind[753]: New session c2 of user gdm.
+Nov  2 17:07:35 cis106vm systemd: pam_unix(systemd-user:session): session opened for user gdm(uid=127) by (uid=0)
+Nov  2 17:07:37 cis106vm polkitd(authority=local): Registered Authentication Agent for unix-session:c2 (system bus name :1.228 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  2 17:07:49 cis106vm gdm-password]: gkr-pam: unable to locate daemon control file
+Nov  2 17:07:49 cis106vm gdm-password]: gkr-pam: stashed password to try later in open session
+Nov  2 17:07:49 cis106vm gdm-password]: pam_unix(gdm-password:session): session opened for user tchestnut44967(uid=1000) by (uid=0)
+Nov  2 17:07:49 cis106vm systemd-logind[753]: New session 7 of user tchestnut44967.
+Nov  2 17:07:49 cis106vm systemd: pam_unix(systemd-user:session): session opened for user tchestnut44967(uid=1000) by (uid=0)
+Nov  2 17:07:49 cis106vm gdm-password]: gkr-pam: gnome-keyring-daemon started properly and unlocked keyring
+Nov  2 17:07:51 cis106vm gnome-keyring-daemon[16925]: The SSH agent was already initialized
+Nov  2 17:07:51 cis106vm gnome-keyring-daemon[16925]: The PKCS#11 component was already initialized
+Nov  2 17:07:51 cis106vm gnome-keyring-daemon[16925]: The Secret Service was already initialized
+Nov  2 17:07:51 cis106vm polkitd(authority=local): Registered Authentication Agent for unix-session:7 (system bus name :1.281 [/usr/bin/gnome-flashback], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  2 17:07:57 cis106vm PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  2 17:07:57 cis106vm PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  2 17:07:59 cis106vm PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  2 17:07:59 cis106vm PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  2 17:08:00 cis106vm gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+Nov  2 17:08:00 cis106vm systemd-logind[753]: Session c2 logged out. Waiting for processes to exit.
+Nov  2 17:08:00 cis106vm systemd-logind[753]: Removed session c2.
+Nov  2 17:08:00 cis106vm polkitd(authority=local): Unregistered Authentication Agent for unix-session:c2 (system bus name :1.228, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Nov  2 17:08:01 cis106vm dbus-daemon[716]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+Nov  2 17:08:41 cis106vm polkitd(authority=local): Unregistered Authentication Agent for unix-session:7 (system bus name :1.281, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  2 17:08:41 cis106vm gdm-password]: pam_unix(gdm-password:session): session closed for user tchestnut44967
+Nov  2 17:08:41 cis106vm systemd-logind[753]: Session 7 logged out. Waiting for processes to exit.
+Nov  2 17:08:41 cis106vm systemd-logind[753]: Removed session 7.
+Nov  2 17:08:42 cis106vm gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=127) by (uid=0)
+Nov  2 17:08:42 cis106vm systemd-logind[753]: New session c3 of user gdm.
+Nov  2 17:08:42 cis106vm systemd: pam_unix(systemd-user:session): session opened for user gdm(uid=127) by (uid=0)
+Nov  2 17:08:43 cis106vm polkitd(authority=local): Registered Authentication Agent for unix-session:c3 (system bus name :1.320 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  2 17:08:51 cis106vm gdm-password]: gkr-pam: unable to locate daemon control file
+Nov  2 17:08:51 cis106vm gdm-password]: gkr-pam: stashed password to try later in open session
+Nov  2 17:08:52 cis106vm gdm-password]: pam_unix(gdm-password:session): session opened for user tchestnut44967(uid=1000) by (uid=0)
+Nov  2 17:08:52 cis106vm systemd-logind[753]: New session 10 of user tchestnut44967.
+Nov  2 17:08:52 cis106vm systemd: pam_unix(systemd-user:session): session opened for user tchestnut44967(uid=1000) by (uid=0)
+Nov  2 17:08:52 cis106vm gdm-password]: gkr-pam: gnome-keyring-daemon started properly and unlocked keyring
+Nov  2 17:08:54 cis106vm gnome-keyring-daemon[19370]: The Secret Service was already initialized
+Nov  2 17:08:54 cis106vm gnome-keyring-daemon[19370]: The PKCS#11 component was already initialized
+Nov  2 17:08:54 cis106vm gnome-keyring-daemon[19370]: The SSH agent was already initialized
+Nov  2 17:08:54 cis106vm gnome-keyring-daemon[19370]: The Secret Service was already initialized
+Nov  2 17:08:55 cis106vm polkitd(authority=local): Registered Authentication Agent for unix-session:10 (system bus name :1.359 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  2 17:08:59 cis106vm PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  2 17:08:59 cis106vm PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  2 17:09:02 cis106vm PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  2 17:09:02 cis106vm PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  2 17:09:07 cis106vm dbus-daemon[716]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Nov  2 17:10:23 cis106vm systemd-logind[690]: New seat seat0.
+Nov  2 17:10:23 cis106vm systemd-logind[690]: Watching system buttons on /dev/input/event0 (Power Button)
+Nov  2 17:10:23 cis106vm systemd-logind[690]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Nov  2 17:10:23 cis106vm systemd-logind[690]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Nov  2 17:10:24 cis106vm gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=127) by (uid=0)
+Nov  2 17:10:24 cis106vm systemd-logind[690]: New session c1 of user gdm.
+Nov  2 17:10:24 cis106vm systemd: pam_unix(systemd-user:session): session opened for user gdm(uid=127) by (uid=0)
+Nov  2 17:10:26 cis106vm polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.44 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  2 17:10:31 cis106vm gdm-password]: gkr-pam: unable to locate daemon control file
+Nov  2 17:10:31 cis106vm gdm-password]: gkr-pam: stashed password to try later in open session
+Nov  2 17:10:31 cis106vm gdm-password]: pam_unix(gdm-password:session): session opened for user tchestnut44967(uid=1000) by (uid=0)
+Nov  2 17:10:31 cis106vm systemd-logind[690]: New session 2 of user tchestnut44967.
+Nov  2 17:10:31 cis106vm systemd: pam_unix(systemd-user:session): session opened for user tchestnut44967(uid=1000) by (uid=0)
+Nov  2 17:10:31 cis106vm gdm-password]: gkr-pam: gnome-keyring-daemon started properly and unlocked keyring
+Nov  2 17:10:33 cis106vm gnome-keyring-daemon[1412]: The Secret Service was already initialized
+Nov  2 17:10:33 cis106vm gnome-keyring-daemon[1412]: The PKCS#11 component was already initialized
+Nov  2 17:10:33 cis106vm gnome-keyring-daemon[1412]: The SSH agent was already initialized
+Nov  2 17:10:35 cis106vm polkitd(authority=local): Registered Authentication Agent for unix-session:2 (system bus name :1.88 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Nov  2 17:10:38 cis106vm gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+Nov  2 17:10:38 cis106vm systemd-logind[690]: Session c1 logged out. Waiting for processes to exit.
+Nov  2 17:10:39 cis106vm systemd-logind[690]: Removed session c1.
+Nov  2 17:10:39 cis106vm polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.44, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Nov  2 17:10:39 cis106vm PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  2 17:10:39 cis106vm PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  2 17:10:42 cis106vm PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Nov  2 17:10:42 cis106vm PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Nov  2 17:10:49 cis106vm dbus-daemon[642]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+Nov  2 17:17:01 cis106vm CRON[5335]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov  2 17:17:01 cis106vm CRON[5335]: pam_unix(cron:session): session closed for user root
+Nov  2 17:19:35 cis106vm sudo: tchestnut44967 : TTY=pts/0 ; PWD=/home/tchestnut44967 ; USER=root ; COMMAND=/usr/bin/apt install cowsay
+Nov  2 17:19:35 cis106vm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Nov  2 17:19:40 cis106vm sudo: pam_unix(sudo:session): session closed for user root
